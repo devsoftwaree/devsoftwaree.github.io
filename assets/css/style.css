@@ -1,0 +1,689 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-family: 'Inter';
+    scroll-behavior: smooth;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+    ;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col-fourth {
+    width: 20%;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mlf-8 {
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.text-grey {
+    color: #828282;
+}
+
+/*
+COMMON CSS
+*/
+.section-heading {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 36px;
+    margin: 50px 0;
+}
+
+/*
+Section 1: Navbar & banner
+*/
+#section1 .navbar__left {
+    color: black;
+    padding: 40px;
+    font-weight: 800;
+    font-size: 28px;
+    width: 40%;
+}
+
+#section1 .navbar__right {
+    float: right !important;
+    width: 60%;
+}
+
+#section1 .navbar__right>a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #000;
+    text-align: center;
+    margin: 0 12px;
+}
+
+#section1 .navbar__right .nav-button {
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    margin: 28px 0;
+    margin-left: 24px;
+    padding: 12px 12px !important;
+}
+
+/* Section 2: Banner */
+.banner {
+    position: relative;
+    background-color: #000000;
+    height: 570px;
+}
+
+.banner .banner-content {
+    position: absolute;
+    top: 200px;
+    left: 10%;
+}
+
+.banner .banner-content * {
+    max-width: 600px;
+    color: #fff;
+}
+
+.banner .banner-content .banner-content__heading {
+    font-size: 80px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    line-height: 80px;
+    text-align: center;
+}
+
+.banner .banner-content .banner-content__subheading {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+.banner .banner-content .banner-content__button {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 24px;
+}
+
+.banner .banner-content .banner-content__button:hover {
+    cursor: pointer;
+    color: #828282;
+}
+
+.banner .banner__image {
+    position: absolute;
+    right: 5%;
+    top: 0;
+}
+
+/*
+Section 4: Products
+*/
+
+#products .products-list {
+    margin: 0 30px;
+    margin-left: 5%;
+}
+
+#products .products-list .product {
+    box-shadow: 1px 1px 5px #726464;
+    border-radius: 10px;
+    margin: 2%;
+    text-align: center;
+    line-height: 48px;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+#products .products-list .product .product__image {
+    width: 250px;
+    height: 250px;
+}
+
+#products .products-list .product .product__price {
+    padding-top: 50px;
+    padding-bottom: 24px;
+    color: #961A1A;
+}
+
+#products .button {
+    font-size: 32px;
+    color: #454545;
+    margin-top: 24px;
+}
+
+#products .button .button__left {
+    text-align: right;
+    padding-right: 10px;
+}
+
+#products .button .button__right {
+    text-align: left;
+    padding-left: 10px;
+}
+
+/*
+HOVER
+*/
+#products .products-list .product:hover {
+    cursor: pointer;
+}
+
+#products .button .button__left:hover {
+    cursor: pointer;
+    color: #828282;
+}
+
+#products .button .button__right:hover {
+    cursor: pointer;
+    color: #828282;
+}
+
+/*
+Section 5: Flash sale
+*/
+
+#flash-sale .sale-content .sale-background {
+    width: 30%;
+    height: 521px;
+    background: url("/assets/image/flash-sale1.png") top center /cover no-repeat;
+}
+
+#flash-sale .sale-content .sale-background .sale-background__content {
+    background-color: rgba(#fff, #fff, #000, 0.1);
+    color: #fff;
+    padding-top: 50%;
+    font-size: 64px;
+    font-weight: 700;
+    height: 80%;
+}
+
+#flash-sale .sale-content .sale-background .sale-background__desc {
+    color: #fff;
+    font-size: 28px;
+}
+
+#flash-sale .sale-content .sale-products {
+    width: 70%;
+    background-color: #292319;
+}
+
+.sale-product__image {
+    width: auto;
+    height: 350px;
+    padding-top: 50%;
+    border-radius: 125px;
+    margin: 20px 10px;
+}
+
+#flash-sale .sale-content .sale-products .sale-product .sale-image1 {
+    background: url("../image/flash-sale2.png") top center /cover no-repeat;
+}
+
+#flash-sale .sale-content .sale-products .sale-product .sale-image2 {
+    background: url("../image/flash-sale3.png") top center /cover no-repeat;
+}
+
+#flash-sale .sale-content .sale-products .sale-product .sale-image3 {
+    background: url("../image/flash-sale4.png") top center /cover no-repeat;
+}
+
+.sale-product__price {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 5px 0;
+    border-radius: 10px;
+    background-color: #EBBEB6;
+}
+
+.sale-product__buy-now {
+    display: flex;
+}
+
+.sale-btn {
+    width: 150px;
+    height: 45px;
+    color: #C21C12;
+    font-weight: 500;
+    font-family: Inter;
+    font-size: 20px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 10px;
+    background-color: #EBBEB6;
+}
+
+.sale-btn:hover {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+
+/* Section 6: Feedback section */
+.feedback {
+    width: 90%;
+    max-width: 1000px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 30px; */
+}
+
+.feedback .feedback__title {
+    width: 40%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback .feedback__title .title__icon {
+    font-size: 24px;
+    color: red;
+}
+
+.feedback .feedback__title .title__content {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* content section */
+.feedback .feedback__content {
+    background-color: #fff;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.feedback .feedback__content .comment__1,
+.feedback .feedback__content .comment__2,
+.feedback .feedback__content .comment__3 {
+    width: 100%;
+    padding: 15px;
+    background: #615353;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* position: relative; */
+}
+
+.feedback .feedback__content .comment__2 {
+    margin: 0 50px 0 50px;
+}
+
+.feedback .feedback__content .comment__1 .picture .feedback .feedback__content .comment__1 .picture .feedback .feedback__content .comment__1 .picture {
+    width: 30%;
+    height: 50%;
+}
+
+.feedback__content .picture img {
+
+    width: 50%;
+    height: 50%;
+    /* object-fit: cover; */
+    border-radius: 500px;
+
+}
+
+.comment__name {
+    align-self: flex-end;
+    font-weight: bold;
+    text-align: right;
+    color: #fff;
+}
+
+.comment__content {
+    /* max-width: 200px; Điều chỉnh kích thước tối đa của nội dung */
+    word-wrap: break-word;
+    /* Đảm bảo rằng nội dung sẽ xuống dòng khi cần thiết */
+    overflow-wrap: break-word;
+    /* Tương tự như word-wrap, đảm bảo nội dung không tràn ra ngoài */
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    /* Đảm bảo văn bản căn đều chữ trong khung */
+}
+
+
+.comment__icon {
+    display: flex;
+    justify-content: center;
+    color: #D6A72F;
+    gap: 5px;
+}
+
+/* Section 7: Registry Advisory  */
+/* Registry */
+
+.registry {
+    width: 90%;
+    max-width: 1000px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 0 20px 0 20px;
+    border-radius: 15px;
+    background-color: #f7f7f7;
+    /* overflow: hidden; */
+}
+
+/* picture  */
+.registry .registry__picture {
+    width: 40%;
+    height: 100%;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.registry .registry__picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* form  */
+.registry .registry__form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* title form  */
+.registry .registry__form .title {
+    font-size: 36px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* input */
+.registry .registry__form .input {
+    padding: 20px;
+    border: none;
+    font: inherit;
+    color: #000;
+    background-color: transparent;
+}
+
+.registry__form .input-name,
+.registry__form .input-phone,
+.registry__form .input-email {
+    position: relative;
+    outline: 0.5px solid #000;
+    border-radius: 10px;
+}
+
+.registry__form .input-name,
+.registry__form .input-phone {
+    margin-bottom: 30px;
+}
+
+.registry__form .input-email {
+    margin-bottom: 10px;
+}
+
+
+/* input field */
+.registry__form .input input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 100px;
+    outline: none;
+}
+
+/* label  */
+.registry__form .input-label {
+    position: absolute;
+    /* top: -18px;
+    left: 10px; */
+    background-color: #f7f7f7;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #000;
+    /* transition: 0.3s; */
+}
+
+/* label animation  */
+.input:focus+.input-label,
+.input:valid+.input-label {
+    transform:
+        translate(10px, -18px) scale(.9);
+    color: #000;
+    padding-inline: 5px;
+
+}
+
+.input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10px, 10px);
+    transition: transform .30s;
+}
+
+.input:is(:focus, :valid) {
+    outline-color: #f7f7f7;
+}
+
+/* button  */
+.registry__form button {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 110px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    padding: 20px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* button animation  */
+.registry__form button:hover {
+    background-color: #463c3c;
+}
+
+/* end registry advisory  */
+
+
+
+.delivery-policy {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.delivery-policy__heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.delivery-policy__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.policy-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.policy-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 45%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.policy-item {
+    margin: 10px 0;
+    text-align: center;
+    color: #555;
+}
+
+.policy-item i {
+    font-size: 36px;
+    color: #000;
+}
+
+.policy-item:first-child {
+    margin-bottom: 10px;
+}
+
+.policy-item:nth-child(2) {
+    font-weight: bold;
+    color: #333;
+}
+
+
+/*
+Section 9: Footer
+*/
+
+#footer .content {
+    margin: auto;
+}
+
+/* LEFT */
+#footer .brand {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    margin: 50px 0;
+}
+
+#footer .content {
+    margin: 0 50px;
+}
+
+.content .content__left .contacts {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.content .content__left {
+    color: #454545;
+}
+
+.content .content__left i {
+    padding: 0 10px;
+    font-size: 24px;
+    color: #828282;
+}
+
+/* RIGHT */
+.content__right .subclass p {
+    color: #000;
+    line-height: 24px;
+    ;
+    font-weight: 500;
+}
+
+.content__right .subclass p a {
+    text-decoration: none;
+    color: #454545;
+}
+
+.content__right .subclass p a:hover {
+    color: blue;
+}
+
+#footer .social-icons {
+    margin-top: 32px;
+}
+
+#footer .social-icons a {
+    text-decoration: none;
+}
+
+#footer .social-icons icon {
+    color: #828282;
+    font-size: 24px;
+    padding: 10px;
+}
+
+#footer .copyright {
+    color: #828282;
+}
+
+#footer .copyright a {
+    color: #828282;
+}
