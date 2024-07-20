@@ -18,7 +18,6 @@ html {
 
 .row {
     margin-left: -8px;
-    margin-right: -8px;
 }
 
 .row::after {
@@ -560,30 +559,31 @@ Section 5: Flash sale
 
 /* Section 6: Feedback section */
 .feedback {
-    width: 90%;
-    max-width: 1000px;
-    height: 600px;
+    width: 100%;
+    margin: 80px 0 100px 0;
+    height: 400px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    /* padding: 30px; */
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .feedback .feedback__title {
-    width: 40%;
-    height: 15%;
+    width: 100%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .feedback .feedback__title .title__icon {
-    font-size: 24px;
+    font-size: 30px;
     color: red;
 }
 
 .feedback .feedback__title .title__content {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -591,95 +591,124 @@ Section 5: Flash sale
 .feedback .feedback__content {
     background-color: #fff;
     width: 100%;
-    height: 50%;
+    height: 60%;
+    padding: 0 50px 0 50px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
 
-.feedback .feedback__content .comment__1,
-.feedback .feedback__content .comment__2,
-.feedback .feedback__content .comment__3 {
-    width: 100%;
+.feedback .feedback__content .comment {
+    width: 25%;
+    min-width: 250px;
+    height: 100%;
     padding: 15px;
     background: #615353;
-    border-radius: 10px;
+    border-radius: 75px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* position: relative; */
 }
 
-.feedback .feedback__content .comment__2 {
-    margin: 0 50px 0 50px;
+.feedback .feedback__content .comment .picture {
+    position: relative;
+    width: 40%;
+    height: 15%;
+    top: -40px;
+    left: -10px;
 }
 
-.feedback .feedback__content .comment__1 .picture .feedback .feedback__content .comment__1 .picture .feedback .feedback__content .comment__1 .picture {
-    width: 30%;
-    height: 50%;
-}
-
-.feedback__content .picture img {
-
-    width: 50%;
-    height: 50%;
-    /* object-fit: cover; */
-    border-radius: 500px;
+.feedback .feedback__content .comment .picture img {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    top: -40px;
+    left: -10px;    
 
 }
-
-.comment__name {
-    align-self: flex-end;
-    font-weight: bold;
-    text-align: right;
+.feedback .feedback__content .comment .comment__name {
     color: #fff;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: bold;
+    
 }
 
-.comment__content {
+.feedback .feedback__content .comment .comment__content {
+    height: 50%;
     /* max-width: 200px; Điều chỉnh kích thước tối đa của nội dung */
-    word-wrap: break-word;
+    /* word-wrap: break-word; */
     /* Đảm bảo rằng nội dung sẽ xuống dòng khi cần thiết */
-    overflow-wrap: break-word;
+    /* overflow-wrap: break-word; */
     /* Tương tự như word-wrap, đảm bảo nội dung không tràn ra ngoài */
     color: #fff;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 10px;
     text-align: justify;
-    /* Đảm bảo văn bản căn đều chữ trong khung */
 }
 
 
-.comment__icon {
+.feedback .feedback__content .comment .comment__icon {
+    width: 100%;
+    height: 10%;
+    font-size: 20px;
+    padding: 8px 60px 0 60px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 5px; */
+}
+
+.feedback .feedback__content .comment .comment__icon i {
+    width: 10%;
     color: #D6A72F;
-    gap: 5px;
 }
 
 /* Section 7: Registry Advisory  */
 /* Registry */
+#messageRegistry {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 5%;
+    right: 5%;
+    float: right;
+    z-index: 10;
+}
 
-.registry {
-    width: 90%;
-    max-width: 1000px;
+.registry__advisory {
+    width: 100%;
     height: 500px;
+    margin: 150px 0 100px 0;
     display: flex;
-    align-items: center;
+    justify-content: center;
+}
+
+.registry__advisory .registry {
+    width: 70%;
+    height: 100%;
+    padding: 0 20px 0 20px;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     border: 1px solid #ccc;
-    padding: 0 20px 0 20px;
     border-radius: 15px;
     background-color: #f7f7f7;
     /* overflow: hidden; */
 }
 
 /* picture  */
-.registry .registry__picture {
+.registry__advisory .registry .registry__picture {
     width: 40%;
     height: 100%;
     border-radius: 100px;
     overflow: hidden;
 }
 
-.registry .registry__picture img {
+.registry__advisory .registry .registry__picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -687,7 +716,7 @@ Section 5: Flash sale
 }
 
 /* form  */
-.registry .registry__form {
+.registry__advisory .registry .registry__form {
     width: 50%;
     height: 100%;
     display: flex;
@@ -696,42 +725,43 @@ Section 5: Flash sale
 }
 
 /* title form  */
-.registry .registry__form .title {
+.registry__advisory .registry .registry__form .title {
     font-size: 36px;
-    margin-left: 10px;
+    margin-top: 16px;
     margin-bottom: 10px;
     font-weight: bold;
+    text-align: center;
 }
 
 /* input */
-.registry .registry__form .input {
+.registry__advisory .registry .registry__form .input {
     padding: 20px;
     border: none;
     font: inherit;
     color: #000;
-    background-color: transparent;
+    background-color: #f7f7f7;
 }
 
-.registry__form .input-name,
-.registry__form .input-phone,
-.registry__form .input-email {
+.registry__advisory .registry .registry__form .input-name,
+.registry__advisory .registry .registry__form .input-phone,
+.registry__advisory .registry .registry__form .input-email {
     position: relative;
     outline: 0.5px solid #000;
     border-radius: 10px;
 }
 
-.registry__form .input-name,
-.registry__form .input-phone {
+.registry__advisory .registry .registry__form .input-name,
+.registry__advisory .registry .registry__form .input-phone {
     margin-bottom: 30px;
 }
 
-.registry__form .input-email {
-    margin-bottom: 10px;
+.registry__advisory .registry .registry__form .input-email {
+    margin-bottom: 20px;
 }
 
 
 /* input field */
-.registry__form .input input {
+.registry__advisory .registry__form .input input {
     width: 100%;
     padding: 10px;
     font-size: 16px;
@@ -740,7 +770,7 @@ Section 5: Flash sale
 }
 
 /* label  */
-.registry__form .input-label {
+.registry__advisory .registry .registry__form .input-label {
     position: absolute;
     /* top: -18px;
     left: 10px; */
@@ -755,7 +785,7 @@ Section 5: Flash sale
 .input:focus+.input-label,
 .input:valid+.input-label {
     transform:
-        translate(10px, -18px) scale(.9);
+    translate(10px, -18px) scale(.9);
     color: #000;
     padding-inline: 5px;
 
@@ -779,8 +809,7 @@ Section 5: Flash sale
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 110px;
-    margin-bottom: 10px;
+    margin: auto;
     letter-spacing: 1px;
     padding: 20px;
     font-size: 16px;
@@ -797,11 +826,14 @@ Section 5: Flash sale
     background-color: #463c3c;
 }
 
-/* end registry advisory  */
+/* end section 7 registry advisory  */
 
 
-
+/* section 8  */
 .delivery-policy {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 100px;
     padding: 20px;
     background-color: #fff;
 }
@@ -809,7 +841,7 @@ Section 5: Flash sale
 .delivery-policy__heading {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-align: center;
     color: #333;
 }
@@ -858,6 +890,8 @@ Section 5: Flash sale
     font-weight: bold;
     color: #333;
 }
+
+/* end section 8  */
 
 
 /*
