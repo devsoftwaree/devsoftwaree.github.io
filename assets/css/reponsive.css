@@ -1,21 +1,228 @@
 /* Mobile */
-@media (max-width: 46.1875em) {
+@media (max-width: 46.25em) {
+    /*
+    Comon class
+    */
+    .mobile-undisplay {
+        display: none;
+    }
     
+    .mobile-col-full {
+        width: 100%;
+    }
+
+    .mobile-col-half {
+        width: 40%;
+    }
+
+    .section-heading {
+        font-size: 24px;
+    }
+
+    /*
+    Responsive: Section 4 - Products
+    */
+    #products .products-list {
+        margin-left: 15%;
+    }
+
+    #products .products-list .product {
+        font-size: 20px;
+    }
+
+    #products .products-list .product .product__name {
+        line-height: 24px;
+        min-height: 48px;
+    }    
+
+    #products .products-list .product .product__price {
+        padding: 32px 0 24px;
+        line-height: 24px;
+    }
+
+    /* Modal in section 4 */
+    .modal-container .modal-button {
+        font-size: 16px;
+    }
+
+    .modal-container .modal-heading {
+        font-size: 16px;
+    }
+
+    /* Toast message */
+    .toast {
+        margin-left: 20%;
+        width: 350px;
+    }
+
+    .toast-title {
+        font-size: 12px;
+    }
+
+    .toast-message {
+        font-size: 8px;
+    }
+
+    /*
+    Responsive: Section 5 - Flash sale
+    */
+    #flash-sale .sale-content .sale-background {
+        height: 400px;
+    }
+
+    #flash-sale .sale-content .sale-products {
+        height: 400px;
+    }
+
+    .sale-product__image {
+        margin-top: 75px;
+    }
+
+    #flash-sale .sale-content .sale-background .sale-background__content{
+        font-size: 28px;
+        padding-top: 100%;
+        height: 70%;
+    }
+
+    #flash-sale .sale-content .sale-background .sale-background__desc {
+        font-size: 16px;
+    }
+
+    .sale-product__image {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    .sale-product__price {
+        font-size: 12px !important;
+        line-height: 16px;
+    }
+
+    .sale-btn { 
+        font-size: 12px;
+    }
+
+    /*
+    Responsive: Section 9 - Footer
+    */
+    #footer .content {
+        margin-left: 10px;
+        min-width: 440px;
+    }
+
+    #footer .content .content__left {
+        font-size: 12px;
+    }
+
+    #footer .content .content__left i {
+        font-size: 12px;
+    }
+
+    #footer .social-icons icon {
+        font-size: 16px;
+    }
+    #footer .copyright {
+        font-size: 12px;
+    }
 }
 
 /* Tablet */
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
+    /*
+    Comon class
+    */
     .tablet-undisplay {
         display: none;
-    };
+    }
+
     .tablet-col-third {
-        width: 33.33333%;
+        width: 25%;
+    }
+
+    .section-heading {
+        font-size: 30px;
+    }
+
+
+    /*
+    Responsive: Section 4 - Products
+    */
+    #products .products-list {
+        margin-left: 15%;
+    }
+
+    #products .products-list .product {
+        font-size: 24px;
+    }
+
+    #products .products-list .product .product__price {
+        line-height: 36px;
+    }
+    
+}
+
+/*
+    PRIVATE
+    Responsive: Section 4 - Products
+*/
+@media (min-width: 48.75em) and (max-width: 63.9375em) {
+    #products .products-list .product .product__name {
+        min-height: 48px;
+    }
+}
+/*
+    END PRIVATE
+    End responsive: Section 4 - Products
+*/
+
+
+/*
+    PRIVATE
+    Responsive: Section 5 - Flash sale
+*/
+@media (max-width: 75em) {
+    .sale-product__image {
+        width: 210px;
+        height: 210px;
     }
 }
 
+@media (max-width: 59.375em) {
+    
+    .sale-product__price{
+        font-size: 16px;
+    }
+
+    .sale-product__image {
+        width: 175px;
+        height: 175px;
+    }
+}
+/*
+    END PRIVATE
+    Responsive: Section 5 - Flash sale
+*/
+
+/*
+    PRIVATE
+    Responsive: Section 9 - Footer
+*/
+@media (min-width: 46.25em) and (max-width: 77.8125em) {
+    .content__right .subclass p {
+        min-height: 48px;
+    }
+}
+
+/*
+    END PRIVATE
+    Responsive: Section 5 - Flash sale
+*/
+
 /* PC */
 @media (min-width: 64em) {
-
+    .sale-product__price {
+        max-width: 300px;
+    }
 }
 
 /* Tablet and PC */

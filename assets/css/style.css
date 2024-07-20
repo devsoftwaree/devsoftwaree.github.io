@@ -8,6 +8,7 @@
 html {
     font-family: 'Inter';
     scroll-behavior: smooth;
+    min-width: 360px;
 }
 
 .text-center {
@@ -18,7 +19,6 @@ html {
 .row {
     margin-left: -8px;
     margin-right: -8px;
-    ;
 }
 
 .row::after {
@@ -184,12 +184,22 @@ Section 4: Products
     text-align: center;
     line-height: 48px;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 2em;
+    animation: productsFadeInFromRight ease 0.5s;
+
 }
 
 #products .products-list .product .product__image {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
+}
+
+#products .products-list .product .product__name {
+    min-height: 96px;
+}
+
+#products .products-list .product .product__size {
+    font-size: 0.8em;
 }
 
 #products .products-list .product .product__price {
@@ -199,7 +209,6 @@ Section 4: Products
 }
 
 #products .button {
-    font-size: 32px;
     color: #454545;
     margin-top: 24px;
 }
@@ -207,11 +216,17 @@ Section 4: Products
 #products .button .button__left {
     text-align: right;
     padding-right: 10px;
+    font-size: 32px;
+    background-color: #fff;
+    border: none;
 }
 
 #products .button .button__right {
     text-align: left;
     padding-left: 10px;
+    font-size: 32px;
+    background-color: #fff;
+    border: none;
 }
 
 /*
@@ -231,6 +246,232 @@ HOVER
     color: #828282;
 }
 
+
+/* Modal buy flash sale products */
+#message {
+    position: fixed;
+    z-index: 5;
+    top: 5%;
+    bottom: 90%;
+    right: 5%;
+    left: calc(100% - 450px);
+}
+
+.modal{
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal .modal-container{
+    position: relative;
+    width: 600px;
+    max-width: calc(100% - 256px);
+    min-width: 300px;
+    min-height: 460px;
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modal-container .close-button{
+    font-size: 24px;
+    color: #fff;   
+    position: absolute;
+    right: 0;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal-container .close-button:hover{
+    opacity: 0.8;
+}
+
+.modal-container .modal-heading{
+    color: #fff;
+    font-size: 30px;
+    padding: 42px 16px;
+    background-color: #009688;  
+    text-align: center;
+    display: block;
+}
+
+.modal-container .modal-body{
+    background-color: #fff;
+    padding: 0 16px 16px 16px;
+}
+
+.modal-body .modal-label{
+    display: block;
+    padding-top: 16px;
+}
+
+.modal-body .modal-input{
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+}
+
+#confirm-modal{
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: #009688;  
+    padding: 16px;
+    border: none;
+    font-size: 15px;
+    color: #fff;
+}
+
+#confirm-modal:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal-body .need-help{
+    text-align: right;
+    margin-top: 15px;
+}
+
+.modal-body .help{
+    text-decoration: none;
+    color: #2196F3;
+}
+
+@keyframes modalFadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes productsFadeInFromRight{
+    from{
+        opacity: 0;
+        transform: translateX(140px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes productsFadeInFromLeft{
+    from{
+        opacity: 0;
+        transform: translateX(-140px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* -------------- Toast message ---------------- */
+.toast { 
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f5;
+    max-width: 480px;
+    padding: 16px 24px;
+    border-radius: 5px;
+    border-left: 4px solid;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    line-height: 1.5;   
+    transition: all linear .4s;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(calc(100% + 20px));
+    }
+    to {
+        opacity: 1;
+        transform: translateX(default);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.toast--success {
+    border-color:  #66b72c;
+}
+
+.toast--success .toast__icon {
+    color: #66b72c;
+}
+
+.toast + .toast {
+    margin-top: 24px;
+}
+
+.toast__icon,
+.toast__close {
+    padding: 0 16px;
+}
+
+.toast__icon {
+    font-size: 32px;
+}
+
+.toast__body {
+    flex-grow: 1;
+}
+
+.toast__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.toast__mgs {
+    font-size: 14px;
+    color: #888;
+    margin-top: 4px;
+    line-height: 1.5;
+}
+
+.toast__close {
+    opacity: 0.4;
+    font-size: 28px;
+}
+
+
+.toast__close:hover {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+#toast {
+    position: fixed;
+    top: 32px;
+    right: 32px;
+    z-index: 9;
+}
+
 /*
 Section 5: Flash sale
 */
@@ -238,7 +479,7 @@ Section 5: Flash sale
 #flash-sale .sale-content .sale-background {
     width: 30%;
     height: 521px;
-    background: url("/assets/image/flash-sale1.png") top center /cover no-repeat;
+    background: url("../image/flash-sale1.png") top center /cover no-repeat;
 }
 
 #flash-sale .sale-content .sale-background .sale-background__content {
@@ -257,32 +498,38 @@ Section 5: Flash sale
 
 #flash-sale .sale-content .sale-products {
     width: 70%;
+    height: 521px;
     background-color: #292319;
 }
 
 .sale-product__image {
-    width: auto;
-    height: 350px;
-    padding-top: 50%;
-    border-radius: 125px;
-    margin: 20px 10px;
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    
 }
 
 #flash-sale .sale-content .sale-products .sale-product .sale-image1 {
-    background: url("../image/flash-sale2.png") top center /cover no-repeat;
+    background: url("../image/flash-sale2.png") top center /contain no-repeat;
 }
 
 #flash-sale .sale-content .sale-products .sale-product .sale-image2 {
-    background: url("../image/flash-sale3.png") top center /cover no-repeat;
+    background: url("../image/flash-sale3.png") top center /contain no-repeat;
 }
 
 #flash-sale .sale-content .sale-products .sale-product .sale-image3 {
-    background: url("../image/flash-sale4.png") top center /cover no-repeat;
+    background: url("../image/flash-sale4.png") top center /contain no-repeat;
 }
 
 .sale-product__price {
     font-size: 20px;
-    line-height: 28px;
+    line-height: 28px;  
+    margin-left: auto;
+    margin-right: auto;
     padding: 5px 0;
     border-radius: 10px;
     background-color: #EBBEB6;
@@ -299,7 +546,7 @@ Section 5: Flash sale
     font-weight: 500;
     font-family: Inter;
     font-size: 20px;
-    margin: 10px auto;
+    margin: 28px auto;
     border: none;
     border-radius: 10px;
     background-color: #EBBEB6;
@@ -653,7 +900,6 @@ Section 9: Footer
 .content__right .subclass p {
     color: #000;
     line-height: 24px;
-    ;
     font-weight: 500;
 }
 
@@ -687,3 +933,4 @@ Section 9: Footer
 #footer .copyright a {
     color: #828282;
 }
+
