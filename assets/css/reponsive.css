@@ -1,3 +1,4 @@
+/* Thiên responsive */
 /* Mobile */
 @media (max-width: 46.25em) {
     /*
@@ -102,9 +103,14 @@
         font-size: 12px;
     }
 
+
     /*
     Responsive: Section 9 - Footer
     */
+    #footer {
+        padding-top: 24px;
+    }
+
     #footer .content {
         margin-left: 10px;
         min-width: 440px;
@@ -161,6 +167,7 @@
     
 }
 
+
 /*
     PRIVATE
     Responsive: Section 4 - Products
@@ -203,6 +210,7 @@
     Responsive: Section 5 - Flash sale
 */
 
+
 /*
     PRIVATE
     Responsive: Section 9 - Footer
@@ -233,4 +241,65 @@
 /* Mobile and Tablet */
 @media (max-width: 63.9375em) {
     
+}
+
+
+/* Quí responsive */
+
+/* Table */
+@media (max-width: 78.125em) {
+    .feedback .feedback__content .comment .comment__content {
+        height: 125px;
+    }
+
+    .feedback .feedback__content .comment .comment__content {
+        font-size : 14px;
+    }
+
+    .feedback .feedback__content .comment {
+        margin: 48px 16px;
+    }
+}
+
+@media (max-width: 57.5em) {
+    .feedback .feedback__content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }   
+
+    .registry__advisory {
+        margin-top: 500px;
+    }
+
+    .registry__advisory .registry .registry__form .title {
+        font-size: 24px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .mobile-undisplay {
+        display: none;
+    }
+
+    .feedback .feedback__content .comment {
+        margin: 48px 16px;
+    }
+
+    
+    .registry__advisory .registry .registry__form {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 42.5em) {
+    .registry__advisory {
+        margin-top: 800px;
+    }
+
+    .registry__form button {
+        margin-top: 20px;
+        font-size: 12px;
+    }
 }
