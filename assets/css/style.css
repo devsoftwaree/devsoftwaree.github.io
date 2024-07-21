@@ -185,6 +185,72 @@ Section 1: Navbar & banner
     width: 100%;
 }
 
+/* Section 2: Slogan & Video */
+.contents {
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contents .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contents .content * {
+    max-width: 600px;
+    color: #000;
+}
+
+.contents .content .content__slogan {
+    font-size: 32px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    line-height: 60px;
+    text-align: center;
+}
+
+.contents .content .content__subslogan {
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 30px;
+    margin-top: 20px;
+    font-weight: 400;
+    color: #828282;
+}
+
+.contents .content .content__button {
+    text-align: center;
+    margin-top: 60px;
+    background-color: #000;
+    color: bisque;
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 24px;
+}
+
+.contents .content .content__button:hover {
+    cursor: pointer;
+    color: #6f6e6e;
+}
+
+#section2 .video_demo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section2 .video_demo video {
+    width: 90%;
+    max-width: 700px;
+    max-height: 500px;
+    object-fit: contain;
+    
+} 
+
 /*
 Section 4: Products
 */
@@ -625,7 +691,6 @@ Section 5: Flash sale
     background: #615353;
     border-radius: 75px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* position: relative; */
 }
 
 .feedback .feedback__content .comment .picture {

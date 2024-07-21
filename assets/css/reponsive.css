@@ -27,6 +27,7 @@
         font-size: 16px;
         margin-top: 6px;
     }
+
     #section1 .navbar__right .nav-button {
         font-size: 12px;
         width: 120px;
@@ -45,6 +46,19 @@
         padding: 16px;
     }
 
+    /*
+    Responsive: Section 2 - Products
+    */  
+    .contents .content {
+        margin: 0 36px;
+    }
+    .contents .content .content__slogan {
+        font-size: 24px;
+    }
+    .contents .content .content__subslogan,
+    .contents .content .content__button  {
+        font-size: 18px;
+    }
 
     /*
     Responsive: Section 4 - Products
@@ -175,11 +189,10 @@
         font-size: 30px;
     }
 
-    /*Responsive: Section 1 - Navbar */
+    /* Responsive: Section 2 - Slogan & video */
+    
 
-    /*
-    Responsive: Section 4 - Products
-    */
+    /* Responsive: Section 4 - Products */
     #products .products-list {
         margin-left: 15%;
     }
@@ -193,6 +206,20 @@
     }
     
 }
+
+/* Tablet and mobille */
+@media (max-width: 63.9375em) {
+    .contents {
+        flex-direction: column;
+    }
+
+    .video_demo {
+        margin-top: 36px;
+        margin-right: 18px;
+        margin-left: 18px;
+    }
+}
+
 
 /*
     PRIVATE
