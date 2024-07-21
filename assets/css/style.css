@@ -263,7 +263,7 @@ Section 1: Navbar & banner
     background-color: #000000;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .collections .collection {
