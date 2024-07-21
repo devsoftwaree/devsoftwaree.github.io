@@ -21,6 +21,32 @@
     }
 
     /*
+    Responsive: Section 1 - Navbar & banner
+    */
+    #section1 .navbar__left {
+        font-size: 16px;
+        margin-top: 6px;
+    }
+    #section1 .navbar__right .nav-button {
+        font-size: 12px;
+        width: 120px;
+    }
+
+    .banner .banner-content .banner-content__heading {
+        font-size: 36px !important;
+    }
+
+    .banner .banner-content .banner-content__subheading {
+        font-size: 16px !important;
+    }
+
+    .banner .banner-content .banner-content__button {
+        font-size: 12px !important;
+        padding: 16px;
+    }
+
+
+    /*
     Responsive: Section 4 - Products
     */
     #products .products-list {
@@ -149,6 +175,7 @@
         font-size: 30px;
     }
 
+    /*Responsive: Section 1 - Navbar */
 
     /*
     Responsive: Section 4 - Products
@@ -166,6 +193,41 @@
     }
     
 }
+
+/*
+    PRIVATE
+    Responsive: Section 1 - Navbar
+*/
+@media (max-width: 85.625em) {
+    #section1 .navbar__left {
+        width: 25%;
+    }
+
+    #section1 .navbar__right {
+        width: 75%;
+    }
+}
+
+@media (max-width: 68.75em) {
+    .section1-undisplay {
+        display: none;
+    }
+
+    .section1-col-full {
+        width: 100%;
+    }
+
+    #section1 .navbar__right .nav-button {
+        float: right;
+        margin-right: 24px;
+    }  
+    
+   
+}
+/*
+    END PRIVATE
+    End responsive: Section 4 - Products
+*/
 
 
 /*
@@ -220,10 +282,9 @@
         min-height: 48px;
     }
 }
-
 /*
     END PRIVATE
-    Responsive: Section 5 - Flash sale
+    Responsive: Section 9 - Footer
 */
 
 /* PC */
@@ -248,6 +309,23 @@
 
 /* Table */
 @media (max-width: 78.125em) {
+    /* Responsive: Section 1 - Banner */
+    .banner .banner-content {
+        left: 5%;
+    }
+    .banner .banner-content .banner-content__heading {
+        font-size: 60px;
+    }
+
+    .banner .banner__image {
+        width: 100%;    
+        max-width: 400px;
+    }
+
+    .banner .banner-content .banner-content__subheading {
+        font-size: 18px;
+    }
+
     .feedback .feedback__content .comment .comment__content {
         height: 125px;
     }
@@ -258,6 +336,37 @@
 
     .feedback .feedback__content .comment {
         margin: 48px 16px;
+    }
+}
+
+@media(max-width: 63.125em) {
+    /* Responsive: Section 1 - Banner */
+    .banner .banner-content .banner-content__heading {
+        font-size: 48px;
+    }
+
+    .banner .banner-content .banner-content__subheading {
+        font-size: 14px;
+    }
+
+    .banner .banner-content .banner-content__button {
+        max-width: 200px;
+        font-size: 16px;
+    }
+
+    .banner .banner-left {
+        width: 100%;
+    }
+
+    .banner .banner-content {
+        margin-top: 0;
+        margin-left: 0;
+        padding: 48px 0;
+
+    }
+
+    .banner .banner__image {
+        display: none;
     }
 }
 
