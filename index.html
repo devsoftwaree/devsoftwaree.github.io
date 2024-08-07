@@ -1,582 +1,720 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lungtungstudio</title>
+    <link
+      rel="icon"
+      href="./assets/image/logo-removebg.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/reponsive.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css"
+    />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Lungtungstudio</title>
-	<link rel="icon" href="./assets/image/logo-removebg.png" type="image/x-icon" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-		integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="./assets/css/style.css">
-	<link rel="stylesheet" href="./assets/css/reponsive.css">
-	<link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
-</head>
+  <body>
+    <!-- Mesage registry -->
+    <div id="messageRegistry"></div>
 
-<body>
-	<!-- Mesage registry -->
-	<div id="messageRegistry"></div>
-	
-	<!-- Section 1: Navbar -->
-	<div id="section1" class="navbar row">
-		<p2 class="col navbar__left">
-			Lungtungstudio
-		</p2>
-		<div class="col row navbar__right">
-			<a href="#" class="col col-fourth section1-undisplay">Thương hiệu</a>
-			<a href="#" class="col col-fourth section1-undisplay">Sản phẩm</a>
-			<a href="#" class="col col-fourth section1-undisplay">Blog thời trang</a>
-			<a class="col col-fourth section1-col-full nav-button" href="#">Mua sản phẩm</a>
-		</div>
-	</div>
+    <!-- Section 1: Navbar -->
+    <!-- header  -->
+    <div class="navbar">
+      <div class="navbar__header">
+        <div class="header__left">Lungtungstudio</div>
+        <div class="header__right">
+          <div class="title1">
+            <a href="#" class="title">Thương hiệu</a>
+            <a href="#" class="title">Sản phẩm</a>
+            <a href="#" class="title">Blog thời trang</a>
+          </div>
+          <div class="title2">
+            <a class="button" href="#">Mua sản phẩm</a>
+          </div>
+        </div>
+      </div>
 
-	<!-- Section 1: Banner -->
-	<div class="row banner">
-		<div class="col banner-left">
-			<div class="banner-content">
-				<h1 class="banner-content__heading">Lungtungstudio</h1>
-				<h3 class="banner-content__subheading">Thương hiệu thời trang đường phố chất lượng</h3>
-				<div class="banner-content__button">Khám phá ngay!</div>
-			</div>
-		</div>
-		<div class="col banner__image">
-			<img class="image" src="./assets/image/banner.png" />
-		</div>
-	</div>
+      <!-- Banner -->
 
-	<!-- Section 2: Slogan & Video -->
-	<div id="section2" class="contents">
-        <div class="content">
-            <h1 class="content__slogan">Be Unique - Khác Biệt Để Đặc Biệt</h1>
-            <h3 class="content__subslogan">Dù bạn là ai, bạn có khiếm khuyết gì thì cũng đừng ngần ngại và hãy dám đứng
-                lên và thể hiện mình. Dám thể hiện cái tôi và cá tính của chính mình.</h3>
+      <div class="navbar__banner">
+        <div class="banner__left">
+          <div class="header">
+            <h1 class="banner__heading">Lungtungstudio</h1>
+            <h3 class="banner__subheading">
+              Thương hiệu thời trang đường phố chất lượng
+            </h3>
+            <div class="button">Khám phá ngay!</div>
+          </div>
+        </div>
+        <div class="banner__right">
+          <img class="image" src="./assets/image/banner.png" />
+        </div>
+      </div>
+    </div>
+    <!-- end section 1  -->
+
+    <!-- Section 2: Slogan & Video -->
+    <div class="section2">
+      <div class="container">
+        <div class="content__wrapper">
+          <div class="content">
+            <p class="content__slogan">Be Unique</p>
+            <p class="content__slogan">-</p>
+            <p class="content__slogan">Khác Biệt Để Đặc Biệt</p>
+          </div>
+          <div class="content">
+            <h3 class="content__subslogan">
+              Dù bạn là ai, bạn có khiếm khuyết gì thì cũng đừng ngần ngại và
+              hãy dám đứng lên và thể hiện mình. Dám thể hiện cái tôi và cá tính
+              của chính mình.
+            </h3>
+          </div>
+          <div class="content">
             <div class="content__button">Liên hệ với chúng tôi!</div>
+          </div>
         </div>
-        <div class="video_demo">
-            <video controls poster="./assets/image/thumbnail-video.jpg">
-                <source src="./assets/videos/demo-video.mov" type="video/mp4" />
-            </video>
+        <div class="video__container">
+          <video controls poster="./assets/image/thumbnail-video.jpg">
+            <source src="./assets/videos/demo-video.mov" type="video/mp4" />
+          </video>
         </div>
-	</div>
+      </div>
+    </div>
+    <!-- js  -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll(
+          ".content__wrapper, .video__container"
+        );
 
-	<div id="section3">
-        <h1 class="section-heading text-center">Các Bộ Sưu Tập Mới</h1>
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+          }
+        );
 
+        sections.forEach((section) => {
+          observer.observe(section);
+        });
+      });
+    </script>
+    <!-- end section 2 -->
+
+    <!-- section 3: Collections -->
+    <div id="section3">
+      <div class="title">Bộ Sưu Tập Mới Nhất</div>
+
+      <div class="content">
         <div class="collections">
-            <div class="collection">
-                <img class="image" src="./assets/image/collection1.jpg" width="400px"/>
-                <p class="collection__heading">Collection1</p>
-                <p class="collection__desc">Tôn vinh vẻ của sự không hoàn hảo, <br>trân trọng những góc nhìn mới mẻ tạo nên thế giới đầy khác biệt</p>
-            </div>
-    
-            <div class="collection mobile-undisplay">
-                <img class="image" src="./assets/image/collection2.jpg" width="400px"/>
-                <p class="collection__heading">Collection2</p>
-                <p class="collection__desc">Tượng trưng cho sự trong sáng, tinh khiết tạo nên sự thanh lịch và là điểm nhấn của Bộ Sưu Tập</p>
-            </div>
-    
-            <div class="collection mobile-undisplay tablet-undisplay">
-                <img class="image" src="./assets/image/collection3.jpg"width="400px"/>
-                <p class="collection__heading">Collection3</p>
-                <p class="collection__desc">Nhằm đề cao tinh thần sáng tạo, tự do và không giới hạn khát vọng với những điều mới lạ</p>
-            </div>
+          <div class="detail">
+            <span style="--i: 1">
+              <img src="./assets/image/collection1.jpg" />
+            </span>
+
+            <span style="--i: 2">
+              <img src="./assets/image/collection2.jpg" />
+            </span>
+
+            <span style="--i: 3">
+              <img src="./assets/image/collection3.jpg" />
+            </span>
+
+            <span style="--i: 4">
+              <img src="./assets/image/collection4.png" />
+            </span>
+          </div>
         </div>
+
+        <div class="infor">
+          <div class="name">StreetWear</div>
+          <div class="name">
+            Tôn vinh vẻ đẹp của sự không hoàn hảo, trân trọng những góc nhìn mới
+            mẻ tạo nên thế giới đầy khác biệt
+          </div>
+          <div class="button">Xem Chi tiết</div>
+        </div>
+      </div>
     </div>
 
-	<!-- Section 4: Products-->
-	<div id="products">
-		<p class="section-heading text-center">Sản phẩm nổi bật</p>
-		<div id="slider_js" class="products-list row">
-			<div class="product col col-fourth tablet-col-third  mobile-col-half mlf-8">
-				<img src="./assets/image/product1.png" alt="Áo sơ mi lệch" class="product__image">
-				<p class="product__name">SƠ MI LỆCH</p>
-				<p class="product__size">Size: 1, 2, 3</p>
-				<p class="product__price">GIÁ: 520.000đ</p>
-			</div>
-			<div class="product col col-fourth tablet-col-third mobile-col-half mlf-8">
-				<img src="./assets/image/product2.png" alt="Áo sơ mi lệch" class="product__image">
-				<p class="product__name">CLOAK</p>
-				<p class="product__size">Size: 1, 2, 3</p>
-				<p class="product__price">GIÁ: 224.000đ</p>
-			</div>
-			<div class="product col col-fourth tablet-col-third mobile-undisplay mlf-8">
-				<img src="./assets/image/product3.png" alt="Áo sơ mi lệch" class="product__image">
-				<p class="product__name">SƠ MI TRỤ</p>
-				<p class="product__size">Size: 1, 2, 3</p>
-				<p class="product__price">GIÁ: 496.000đ</p>
-			</div>
-			<div class="product col col-fourth tablet-undisplay mobile-undisplay mlf-8">
-				<img src="./assets/image/product4.png" alt="Áo sơ mi lệch" class="product__image">
-				<p class="product__name">QUẦN CHUÔNG</p>
-				<p class="product__size">Size: 1, 2, 3</p>
-				<p class="product__price">GIÁ: 496.000đ</p>
-			</div>
+    <!-- Section 4: Products-->
+    <div id="products">
+      <p class="section-heading text-center">Sản phẩm nổi bật</p>
+      <div id="slider_js" class="products-list row">
+        <div
+          class="product col col-fourth tablet-col-third mobile-col-half mlf-8"
+        >
+          <img
+            src="./assets/image/product1.png"
+            alt="Áo sơ mi lệch"
+            class="product__image"
+          />
+          <p class="product__name">SƠ MI LỆCH</p>
+          <p class="product__size">Size: 1, 2, 3</p>
+          <p class="product__price">GIÁ: 520.000đ</p>
+        </div>
+        <div
+          class="product col col-fourth tablet-col-third mobile-col-half mlf-8"
+        >
+          <img
+            src="./assets/image/product2.png"
+            alt="Áo sơ mi lệch"
+            class="product__image"
+          />
+          <p class="product__name">CLOAK</p>
+          <p class="product__size">Size: 1, 2, 3</p>
+          <p class="product__price">GIÁ: 224.000đ</p>
+        </div>
+        <div
+          class="product col col-fourth tablet-col-third mobile-undisplay mlf-8"
+        >
+          <img
+            src="./assets/image/product3.png"
+            alt="Áo sơ mi lệch"
+            class="product__image"
+          />
+          <p class="product__name">SƠ MI TRỤ</p>
+          <p class="product__size">Size: 1, 2, 3</p>
+          <p class="product__price">GIÁ: 496.000đ</p>
+        </div>
+        <div
+          class="product col col-fourth tablet-undisplay mobile-undisplay mlf-8"
+        >
+          <img
+            src="./assets/image/product4.png"
+            alt="Áo sơ mi lệch"
+            class="product__image"
+          />
+          <p class="product__name">QUẦN CHUÔNG</p>
+          <p class="product__size">Size: 1, 2, 3</p>
+          <p class="product__price">GIÁ: 496.000đ</p>
+        </div>
+      </div>
+      <div class="button row text-center">
+        <button id="prev-button" class="button__left col col-half">
+          <i class="ti-angle-left"></i>
+        </button>
+        <button id="next-button" class="button__right col col-half">
+          <i class="ti-angle-right"></i>
+        </button>
+      </div>
+    </div>
 
-		</div>
-		<div class="button row text-center">
-			<button id="prev-button" class="button__left col col-half"><i class="ti-angle-left"></i></button>
-			<button id="next-button" class="button__right col col-half"><i class="ti-angle-right"></i></button>
-		</div>
-	</div>
+    <!-- Section 5: Flash sale -->
+    <div id="flash-sale">
+      <p class="section-heading text-center">Các sản phẩm giảm giá</p>
 
-	<!-- Section 5: Flash sale -->
-	<div id="flash-sale">
-		<p class="section-heading text-center">Các sản phẩm giảm giá</p>
+      <div class="sale-content row">
+        <div class="sale-background col">
+          <div class="sale-background__content text-center">
+            GIẢM SỐC <br />30%
+          </div>
+          <p class="sale-background__desc text-center">Mua ngay!</p>
+        </div>
 
-		<div class="sale-content row">
-			<div class="sale-background col">
-				<div class="sale-background__content text-center">GIẢM SỐC <br>30%</div>
-				<p class="sale-background__desc text-center">Mua ngay!</p>
-			</div>
+        <div class="sale-products row col">
+          <div class="sale-product col col-third">
+            <div class="sale-product__image sale-image1"></div>
+            <p class="sale-product__price text-center">
+              Giá gốc: <del>800.000đ</del> <br />Chỉ còn: 560.000đ
+            </p>
+            <div class="sale-product__buy-now">
+              <button id="buy-now3" class="sale-btn js-sale-btn">
+                Mua ngay!
+              </button>
+            </div>
+          </div>
 
-			<div class="sale-products row col">
-				<div class="sale-product col col-third">
-					<div class="sale-product__image sale-image1"></div>
-					<p class="sale-product__price text-center">
-						Giá gốc: <del>800.000đ</del>
-						<br>Chỉ còn: 560.000đ
-					</p>
-					<div class="sale-product__buy-now">
-						<button id="buy-now3" class="sale-btn js-sale-btn">Mua ngay!</button>
-					</div>
-				</div>
+          <div class="sale-product col col-third">
+            <div class="sale-product__image sale-image2"></div>
+            <p class="sale-product__price text-center">
+              Giá gốc: <del>590.000đ</del> <br />Chỉ còn: 409.000đ
+            </p>
+            <div class="sale-product__buy-now">
+              <button id="buy-now2" class="sale-btn js-sale-btn">
+                Mua ngay!
+              </button>
+            </div>
+          </div>
 
-				<div class="sale-product col col-third">
-					<div class="sale-product__image sale-image2"></div>
-					<p class="sale-product__price text-center">
-						Giá gốc: <del>590.000đ</del>
-						<br>Chỉ còn: 409.000đ
-					</p>
-					<div class="sale-product__buy-now">
-						<button id="buy-now2" class="sale-btn js-sale-btn">Mua ngay!</button>
-					</div>
-				</div>
+          <div class="sale-product col col-third">
+            <div class="sale-product__image sale-image3"></div>
+            <p class="sale-product__price text-center">
+              Giá gốc: <del>390.000đ</del> <br />Chỉ còn: 259.000đ
+            </p>
+            <div class="sale-product__buy-now">
+              <button id="buy-now3" class="sale-btn js-sale-btn">
+                Mua ngay!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-				<div class="sale-product col col-third">
-					<div class="sale-product__image sale-image3"></div>
-					<p class="sale-product__price text-center">
-						Giá gốc: <del>390.000đ</del>
-						<br>Chỉ còn: 259.000đ
-					</p>
-					<div class="sale-product__buy-now">
-						<button id="buy-now3" class="sale-btn js-sale-btn">Mua ngay!</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <!-- Section 6: Feedback -->
+    <div class="feedback">
+      <!-- title  -->
+      <div class="feedback__title">
+        <div class="title__icon">
+          <i class="fa-regular fa-envelope"></i>
+        </div>
+        <div class="title__content">Cảm Nhận Từ Khách Hàng</div>
+      </div>
+      <!-- content  -->
+      <div class="feedback__content">
+        <!-- comment__1  -->
+        <div class="comment">
+          <div class="picture">
+            <img src="./assets/image/feedback1.jpeg" alt="" />
+          </div>
+          <div class="comment__name">Kỳ Duyên</div>
+          <div class="comment__content">
+            “Thiết kế thời trang hiện đại, đa dạng và bắt kịp xu hướng. Tôi đã
+            mua sắm ở đây nhiều lần và luôn cảm thấy hài lòng với mỗi lần mua
+            hàng.”
+          </div>
+          <div class="comment__icon">
+            <div class="icon__1">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="icon__2">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="icon__3">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="icon__4">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="icon__5">
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <!-- comment__2  -->
 
-	<!-- Section 6: Feedback -->
-	<div class="feedback">
-		<!-- title  -->
-		<div class="feedback__title">
-			<div class="title__icon">
-				<i class="fa-regular fa-envelope"></i>
-			</div>
-			<div class="title__content">FEEDBACK</div>
-		</div>
-		<!-- content  -->
-		<div class="feedback__content">
-			<!-- comment__1  -->
-			<div class="comment">
-				<div class="picture">
-					<img src="./assets/image/feedback1.jpeg" alt="" />
-				</div>
-				<div class="comment__name">Kỳ Duyên</div>
-				<div class="comment__content">
-					“Thiết kế thời trang hiện đại, đa dạng và bắt kịp xu hướng. Tôi đã
-					mua sắm ở đây nhiều lần và luôn cảm thấy hài lòng với mỗi lần mua
-					hàng.”
-				</div>
-				<div class="comment__icon">
-					<div class="icon__1">
-						<i class="fa-solid fa-star"></i>
-					</div>
-					<div class="icon__2">
-						<i class="fa-solid fa-star"></i>
-					</div>
-					<div class="icon__3">
-						<i class="fa-solid fa-star"></i>
-					</div>
-					<div class="icon__4">
-						<i class="fa-solid fa-star"></i>
-					</div>
-					<div class="icon__5">
-						<i class="fa-solid fa-star"></i>
-					</div>
-				</div>
-			</div>
-			<!-- comment__2  -->
+        <div class="comment">
+          <div class="picture">
+            <img src="./assets/image/feedback2.jpeg" alt="" />
+          </div>
+          <div class="comment__name">Khánh Ly</div>
+          <div class="comment__content">
+            “Tôi rất hài lòng với chất lượng sản phẩm và dịch vụ của cửa hàng.
+            Đội ngũ nhân viên nhiệt tình, tư vấn kỹ lưỡng, giúp tôi chọn được
+            những bộ trang phục phù hợp nhất.”
+          </div>
+          <div class="comment__icon">
+            <div class="icon__1">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="icon__2">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="icon__3">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="icon__4">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="icon__5">
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
 
-			<div class="comment">
-				<div class="picture">
-					<img src="./assets/image/feedback2.jpeg" alt="" />
-				</div>
-				<div class="comment__name">Khánh Ly</div>
-				<div class="comment__content">
-					“Tôi rất hài lòng với chất lượng sản phẩm và dịch vụ của cửa hàng.
-					Đội ngũ nhân viên nhiệt tình, tư vấn kỹ lưỡng, giúp tôi chọn được
-					những bộ trang phục phù hợp nhất.”
-				</div>
-				<div class="comment__icon">
-					<div class="icon__1">
-						<i class="fa-solid fa-star"></i>
-					</div>
-					<div class="icon__2">
-						<i class="fa-solid fa-star"></i>
-					</div>
-					<div class="icon__3">
-						<i class="fa-solid fa-star"></i>
-					</div>
-					<div class="icon__4">
-						<i class="fa-solid fa-star"></i>
-					</div>
-					<div class="icon__5">
-						<i class="fa-solid fa-star"></i>
-					</div>
-				</div>
-			</div>
+        <!-- comment__3  -->
 
-			<!-- comment__3  -->
+        <div class="comment">
+          <div class="picture">
+            <img src="./assets/image/feedback3.jpeg" alt="" />
+          </div>
+          <div class="comment__name">Gia Anh</div>
+          <div class="comment__content">
+            “Tôi rất ấn tượng với dịch vụ giao hàng nhanh chóng và đúng hẹn. Sản
+            phẩm được đóng gói cẩn thận, không bị hư hỏng khi đến tay khách
+            hàng.”
+          </div>
+          <div class="comment__icon">
+            <div class="icon__1">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="icon__2">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="icon__3">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="icon__4">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="icon__5">
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-			<div class="comment">
-				<div class="picture">
-					<img src="./assets/image/feedback3.jpeg" alt="" />
-				</div>
-				<div class="comment__name">Gia Anh</div>
-				<div class="comment__content">
-					“Tôi rất ấn tượng với dịch vụ giao hàng nhanh chóng và đúng hẹn. Sản
-					phẩm được đóng gói cẩn thận, không bị hư hỏng khi đến tay khách
-					hàng.”
-				</div>
-				<div class="comment__icon">
-					<div class="icon__1">
-						<i class="fa-solid fa-star"></i>
-					</div>
-					<div class="icon__2">
-						<i class="fa-solid fa-star"></i>
-					</div>
-					<div class="icon__3">
-						<i class="fa-solid fa-star"></i>
-					</div>
-					<div class="icon__4">
-						<i class="fa-solid fa-star"></i>
-					</div>
-					<div class="icon__5">
-						<i class="fa-solid fa-star"></i>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <!-- end feedback  -->
 
-	<!-- end feedback  -->
+    <!-- Section 7: Registry Advisory  -->
+    <div class="registry__advisory">
+      <div class="registry">
+        <!-- Picture -->
+        <div class="registry__picture mobile-undisplay">
+          <img src="./assets/image/register_form.png" alt="" title="" />
+        </div>
+        <!-- Form  -->
+        <div class="registry__form">
+          <div class="title">
+            Đăng Kí Tư Vấn<br />
+            Sản Phẩm
+          </div>
+          <div class="input">
+            <div class="input-name">
+              <input type="text" id="name" required class="input" />
+              <label for="name" class="input-label">Họ Và Tên</label>
+            </div>
+            <div class="input-phone">
+              <input type="number" id="" required class="input" />
+              <label for="phone" class="input-label">Số Điện Thoại</label>
+            </div>
+            <div class="input-email">
+              <input type="text" id="email" required class="input" />
+              <label for="email" class="input-label">Email</label>
+              <!-- end form  -->
+            </div>
+          </div>
+          <button onclick="showSuccessToastRegistry()" ;>Đăng ký ngay!</button>
+        </div>
+      </div>
+    </div>
+    <!-- end Registry Advisory  -->
 
-	<!-- Section 7: Registry Advisory  -->
-	<div class="registry__advisory">
-		<div class="registry">
-			<!-- Picture -->
-			<div class="registry__picture mobile-undisplay">
-				<img src="./assets/image/register_form.png" alt="" title="" />
-			</div>
-			<!-- Form  -->
-			<div class="registry__form">
-				<div class="title">Đăng Kí Tư Vấn<br> Sản Phẩm</div>
-				<div class="input">
-					<div class="input-name">
-						<input type="text" id="name" required class="input" />
-						<label for="name" class="input-label">Họ Và Tên</label>
-					</div>
-					<div class="input-phone">
-						<input type="number" id="" required class="input" />
-						<label for="phone" class="input-label">Số Điện Thoại</label>
-					</div>
-					<div class="input-email">
-						<input type="text" id="email" required class="input" />
-						<label for="email" class="input-label">Email</label>
-						<!-- end form  -->
-					</div>
-				</div>
-				<button onclick="showSuccessToastRegistry()";>Đăng ký ngay!</button>
-			</div>
-		</div>
-	</div>
-	<!-- end Registry Advisory  -->
+    <!-- Section 8: Delivery policy -->
+    <div class="delivery-policy">
+      <div class="delivery-policy__heading">Chính sách giao hàng</div>
+      <!-- content  -->
+      <div class="delivery-policy__content">
+        <!-- row 1 -->
+        <div class="policy-row">
+          <!-- col 1 -->
+          <div class="policy-col">
+            <div class="policy-item">
+              <i class="fa-solid fa-reply-all"></i>
+            </div>
+            <div class="policy-item">Chính sách đổi trả</div>
+            <div class="policy-item">Hỗ trợ đổi hàng trong vòng 7 ngày.</div>
+          </div>
+          <!-- col 2 -->
+          <div class="policy-col">
+            <div class="policy-item">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <div class="policy-item">Chi phí vận chuyển</div>
+            <div class="policy-item">Giao hàng toàn quốc và miễn phí.</div>
+          </div>
+        </div>
+        <!-- end row 1 -->
+        <!-- row 2 -->
+        <div class="policy-row">
+          <!-- col 1 -->
+          <div class="policy-col">
+            <div class="policy-item">
+              <i class="fa-solid fa-user-clock"></i>
+            </div>
+            <div class="policy-item">Thời gian giao hàng</div>
+            <div class="policy-item">
+              Đảm bảo thời gian giao trong vòng 3-4 ngày kể từ ngày đặt đơn
+              hàng.
+            </div>
+          </div>
+          <!-- col 2 -->
+          <div class="policy-col">
+            <div class="policy-item">
+              <i class="fa-solid fa-calendar-days"></i>
+            </div>
+            <div class="policy-item">Thường xuyên cập nhật</div>
+            <div class="policy-item">
+              Thường xuyên cập nhật trạng thái đơn hàng.
+            </div>
+          </div>
+        </div>
+        <!-- end row 2 -->
+      </div>
+      <!-- end content  -->
+    </div>
+    <!-- end delivery policy -->
 
-	<!-- Section 8: Delivery policy -->
-	<div class="delivery-policy">
-		<div class="delivery-policy__heading">Chính sách giao hàng</div>
-		<!-- content  -->
-		<div class="delivery-policy__content">
-			<!-- row 1 -->
-			<div class="policy-row">
-				<!-- col 1 -->
-				<div class="policy-col">
-					<div class="policy-item">
-						<i class="fa-solid fa-reply-all"></i>
-					</div>
-					<div class="policy-item">Chính sách đổi trả</div>
-					<div class="policy-item">Hỗ trợ đổi hàng trong vòng 7 ngày.</div>
-				</div>
-				<!-- col 2 -->
-				<div class="policy-col">
-					<div class="policy-item">
-						<i class="fa-solid fa-truck-fast"></i>
-					</div>
-					<div class="policy-item">Chi phí vận chuyển</div>
-					<div class="policy-item">Giao hàng toàn quốc và miễn phí.</div>
-				</div>
-			</div>
-			<!-- end row 1 -->
-			<!-- row 2 -->
-			<div class="policy-row">
-				<!-- col 1 -->
-				<div class="policy-col">
-					<div class="policy-item">
-						<i class="fa-solid fa-user-clock"></i>
-					</div>
-					<div class="policy-item">Thời gian giao hàng</div>
-					<div class="policy-item">
-						Đảm bảo thời gian giao trong vòng 3-4 ngày kể từ ngày đặt đơn
-						hàng.
-					</div>
-				</div>
-				<!-- col 2 -->
-				<div class="policy-col">
-					<div class="policy-item">
-						<i class="fa-solid fa-calendar-days"></i>
-					</div>
-					<div class="policy-item">Thường xuyên cập nhật</div>
-					<div class="policy-item">
-						Thường xuyên cập nhật trạng thái đơn hàng.
-					</div>
-				</div>
-			</div>
-			<!-- end row 2 -->
-		</div>
-		<!-- end content  -->
-	</div>
-	<!-- end delivery policy -->
+    <!--Section 9: Footer -->
+    <div id="footer">
+      <div class="brand text-center">
+        <p>Lungtungstudio VN</p>
+      </div>
+      <div class="row content">
+        <div class="col col-half mobile-col-full content__left">
+          <p class="contacts">Thông tin liên hệ</p>
+          <div class="address mt-16">
+            <p>
+              <i class="ti-location-pin"></i>338/67/12 Âu Cơ, phường 10, quận
+              Tân Bình, TP.HCM
+            </p>
+          </div>
+          <div class="phone mt-16">
+            <p>
+              <i class="ti-mobile"></i>Điện thoại:
+              <a href="tel://0842555560 ">0842 555 560</a>
+            </p>
+          </div>
+          <div class="mail mt-16">
+            <p>
+              <i class="ti-email"></i>Email:
+              <a href="mailto:lungtungstudio@gmail.com"
+                >lungtungstudio@gmail.com</a
+              >
+            </p>
+          </div>
+        </div>
 
+        <div class="row col col-half mobile-undisplay content__right">
+          <div class="col col-third subclass company">
+            <p>Thương hiệu</p>
+            <p class="mt-16"><a href="#">Giới thiệu</a></p>
+            <p class="mt-16"><a href="#">Lịch sử hình thành</a></p>
+            <p class="mt-16"><a href="#">Hợp tác</a></p>
+          </div>
+          <div class="col col-third subclass products">
+            <p>Sản phẩm</p>
+            <p class="mt-16"><a href="#">Phụ kiện thời trang</a></p>
+            <p class="mt-16"><a href="#">Thời trang nam</a></p>
+            <p class="mt-16"><a href="#">Thời trang nữ</a></p>
+          </div>
+          <div class="col col-third subclass blogs">
+            <p>Blog thời trang</p>
+            <p class="mt-16"><a href="#">Thời trang đường phố</a></p>
+            <p class="mt-16"><a href="#">Xu hướng thời trang</a></p>
+            <p class="mt-16"><a href="#">Thời trang thế giới</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="social-icons text-center">
+        <a href="">
+          <icon class="ti-facebook"></icon>
+        </a>
+        <a href="">
+          <icon class="ti-youtube"></icon>
+        </a>
+        <a href="">
+          <icon class="ti-instagram"></icon>
+        </a>
+      </div>
+      <p class="copyright text-center mt-16">
+        Powered by <a href="#">Yuntti Team</a>
+      </p>
+    </div>
 
-	<!--Section 9: Footer -->
-	<div id="footer">
-		<div class="brand text-center">
-			<p>Lungtungstudio VN</p>
-		</div>
-		<div class="row content">
-			<div class="col col-half mobile-col-full content__left">
-				<p class="contacts">Thông tin liên hệ</p>
-				<div class="address mt-16">
-					<p><i class="ti-location-pin"></i>338/67/12 Âu Cơ, phường 10, quận Tân Bình, TP.HCM</p>
-				</div>
-				<div class="phone mt-16">
-					<p><i class="ti-mobile"></i>Điện thoại: <a href="tel://0842555560 ">0842 555 560</a></p>
-				</div>
-				<div class="mail mt-16">
-					<p><i class="ti-email"></i>Email: <a
-							href="mailto:lungtungstudio@gmail.com">lungtungstudio@gmail.com</a></p>
-				</div>
-			</div>
+    <!-- appear modal when click salebtn -->
+    <!-- Modal -->
+    <div class="modal js-modal">
+      <div class="modal-container js-modal-container">
+        <div class="close-button js-close-button">
+          <i class="close-icon ti-close"></i>
+        </div>
 
-			<div class="row col col-half mobile-undisplay content__right">
-				<div class="col col-third subclass company">
-					<p>Thương hiệu</p>
-					<p class="mt-16"><a href="#">Giới thiệu</a></p>
-					<p class="mt-16"><a href="#">Lịch sử hình thành</a></p>
-					<p class="mt-16"><a href="#">Hợp tác</a></p>
-				</div>
-				<div class="col col-third subclass products">
-					<p>Sản phẩm</p>
-					<p class="mt-16"><a href="#">Phụ kiện thời trang</a></p>
-					<p class="mt-16"><a href="#">Thời trang nam</a></p>
-					<p class="mt-16"><a href="#">Thời trang nữ</a></p>
-				</div>
-				<div class="col col-third subclass blogs">
-					<p>Blog thời trang</p>
-					<p class="mt-16"><a href="#">Thời trang đường phố</a></p>
-					<p class="mt-16"><a href="#">Xu hướng thời trang</a></p>
-					<p class="mt-16"><a href="#">Thời trang thế giới</a></p>
-				</div>
-			</div>
-		</div>
-		<div class="social-icons text-center">
-			<a href="">
-				<icon class="ti-facebook"></icon>
-			</a>
-			<a href="">
-				<icon class="ti-youtube"></icon>
-			</a>
-			<a href="">
-				<icon class="ti-instagram"></icon>
-			</a>
-		</div>
-		<p class="copyright text-center mt-16">Powered by <a href="#">Yuntti Team</a></p>
-	</div>
+        <!-- Modal Heading -->
+        <div class="modal-heading">
+          <i class="bag-icon ti-bag"></i>
+          Đăng kí mua sản phẩm
+        </div>
 
-	<!-- appear modal when click salebtn -->
-	<!-- Modal -->
-	<div class="modal js-modal">
-		<div class="modal-container js-modal-container">
-			<div class="close-button js-close-button">
-				<i class="close-icon ti-close"></i>
-			</div>
+        <!-- Modal Container -->
+        <div class="modal-body">
+          <!-- Input customer's name -->
+          <label for="ip-customer" class="modal-label">
+            <i class="user-icon ti-user"></i>
+            Khách hàng
+          </label>
+          <input
+            type="text"
+            class="modal-input"
+            placeholder="Nhập họ và tên..."
+            id="ip-customer"
+          />
 
-			<!-- Modal Heading -->
-			<div class="modal-heading">
-				<i class="bag-icon ti-bag"></i>
-				Đăng kí mua sản phẩm
-			</div>
+          <!-- Input mail -->
+          <label for="ip-mail" class="modal-label">
+            <i class="user-icon ti-email"></i>
+            Email
+          </label>
+          <input
+            type="text"
+            class="modal-input"
+            placeholder="Nhập email..."
+            id="ip-mail"
+          />
 
-			<!-- Modal Container -->
-			<div class="modal-body">
+          <!-- Input phone number -->
+          <label for="ip-phone" class="modal-label">
+            <i class="user-icon ti-mobile"></i>
+            Số điện thoại
+          </label>
+          <input
+            type="text"
+            class="modal-input"
+            placeholder="Nhập số điện thoại..."
+            id="ip-phone"
+          />
 
-				<!-- Input customer's name -->
-				<label for="ip-customer" class="modal-label">
-					<i class="user-icon ti-user"></i>
-					Khách hàng
-				</label>
-				<input type="text" class="modal-input" placeholder="Nhập họ và tên..." id="ip-customer">
+          <!-- Input Quatity -->
+          <label for="ip-quatity" class="modal-label">
+            <i class="shoping-icon ti-shopping-cart"></i>
+            Số lượng
+          </label>
+          <input
+            type="text"
+            class="modal-input"
+            placeholder="Nhập số lượng sản phẩm..."
+            id="ip-quatity"
+          />
 
-				<!-- Input mail -->
-				<label for="ip-mail" class="modal-label">
-					<i class="user-icon ti-email"></i>
-					Email
-				</label>
-				<input type="text" class="modal-input" placeholder="Nhập email..." id="ip-mail">
+          <!-- Select product size -->
+          <label for="select-product" class="modal-label">
+            <i class="shoping-icon ti-ruler-alt"></i>
+            Size</label
+          >
+          <select name="product-size" id="select-product" class="modal-input">
+            <option value="">--Lựa chọn size phù hợp--</option>
+            <option value="size1">Size 1: Free size: 40kg - 50kg</option>
+            <option value="size2">Size 2: Free size: 50kg - 60kg</option>
+            <option value="size3">Size 3: Free size: >60kg</option>
+          </select>
+          <!-- Button confirm -->
+          <button id="confirm-modal" onclick="showSuccessToast();">
+            Mua hàng
+            <i class="confirm-icon ti-check"></i>
+          </button>
 
-				<!-- Input phone number -->
-				<label for="ip-phone" class="modal-label">
-					<i class="user-icon ti-mobile"></i>
-					Số điện thoại
-				</label>
-				<input type="text" class="modal-input" placeholder="Nhập số điện thoại..." id="ip-phone">
+          <!-- Footer -->
+          <p class="need-help">Cần <a href="#" class="help">hỗ trợ?</a></p>
+        </div>
+      </div>
 
-				<!-- Input Quatity -->
-				<label for="ip-quatity" class="modal-label">
-					<i class="shoping-icon ti-shopping-cart"></i>
-					Số lượng
-				</label>
-				<input type="text" class="modal-input" placeholder="Nhập số lượng sản phẩm..." id="ip-quatity">
+      <div id="message"></div>
+    </div>
+    <script>
+      /* Script section 4: Products */
+      document.getElementById("next-button").onclick = function () {
+        let lists = document.querySelectorAll(".product");
+        const prod = lists[0];
+        prod.style.animation = `productsFadeInFromRight ease .5s`;
+        document.getElementById("slider_js").appendChild(prod);
+      };
 
-				<!-- Select product size -->
-				<label for="select-product" class="modal-label">
-					<i class="shoping-icon ti-ruler-alt"></i>
-					Size</label>
-				<select name="product-size" id="select-product" class="modal-input">
-					<option value="">--Lựa chọn size phù hợp--</option>
-					<option value="size1">Size 1: Free size: 40kg - 50kg</option>
-					<option value="size2">Size 2: Free size: 50kg - 60kg</option>
-					<option value="size3">Size 3: Free size: >60kg</option>
-				</select>
-				<!-- Button confirm -->
-				<button id="confirm-modal" onclick="showSuccessToast();">
-					Mua hàng
-					<i class="confirm-icon ti-check"></i>
-				</button>
+      document.getElementById("prev-button").onclick = function () {
+        let lists = document.querySelectorAll(".product");
+        const prod = lists[lists.length - 1];
+        prod.style.animation = `productsFadeInFromLeft ease .5s`;
+        document.getElementById("slider_js").prepend(prod);
+      };
 
-				<!-- Footer -->
-				<p class="need-help">Cần <a href="#" class="help">hỗ trợ?</a></p>
-			</div>
-		</div>
+      // Script Modal
+      const buyBtns = document.querySelectorAll(".js-sale-btn");
+      const modal = document.querySelector(".js-modal");
+      const modalContainer = document.querySelector(".js-modal-container");
+      const closeModalBtn = document.querySelector(".js-close-button");
 
-		<div id="message">
+      // Hàm hiển thị modal
+      function showBuyProducts() {
+        modal.classList.add("open");
+      }
 
-		</div>
-	</div>
-	<script>
-		/* Script section 4: Products */
-		document.getElementById('next-button').onclick = function () {
-			let lists = document.querySelectorAll('.product');
-			const prod = lists[0];
-			prod.style.animation = `productsFadeInFromRight ease .5s`;
-			document.getElementById('slider_js').appendChild(prod);
-		}
+      // Hàm ẩn modal
+      function hideBuyProducts() {
+        modal.classList.remove("open");
+      }
 
-		document.getElementById('prev-button').onclick = function () {
-			let lists = document.querySelectorAll('.product');
-			const prod = lists[lists.length - 1];
-			prod.style.animation = `productsFadeInFromLeft ease .5s`;
-			document.getElementById('slider_js').prepend(prod);
-		}
+      // Nghe hành vi click vào buyBtn của danh sách buyBtns
+      for (const buyBtn of buyBtns) {
+        buyBtn.addEventListener("click", showBuyProducts);
+      }
 
-		// Script Modal
-		const buyBtns = document.querySelectorAll(".js-sale-btn");
-		const modal = document.querySelector(".js-modal");
-		const modalContainer = document.querySelector(".js-modal-container");
-		const closeModalBtn = document.querySelector(".js-close-button");
+      // Nghe hành vi click vào closeModalBtn
+      closeModalBtn.addEventListener("click", hideBuyProducts);
 
-		// Hàm hiển thị modal
-		function showBuyProducts() {
-			modal.classList.add("open");
-		}
+      // Ẩn modal đi khi click chuột ở vùng phía ngoài
+      modal.addEventListener("click", hideBuyProducts);
 
-		// Hàm ẩn modal
-		function hideBuyProducts() {
-			modal.classList.remove("open");
-		}
+      // Đảm bảo chỉ ẩn modal khi click chuột bên ngoài vùng modal-container
+      modalContainer.addEventListener("click", function (event) {
+        event.stopPropagation();
+      });
 
-		// Nghe hành vi click vào buyBtn của danh sách buyBtns
-		for (const buyBtn of buyBtns) {
-			buyBtn.addEventListener('click', showBuyProducts);
-		}
+      // Toast function
+      function toast({
+        id_name = "",
+        title = "",
+        message = "",
+        type = "info    ",
+        duration = 1000,
+        delay = 3000,
+      }) {
+        const main = document.getElementById(`${id_name}`);
 
-		// Nghe hành vi click vào closeModalBtn
-		closeModalBtn.addEventListener('click', hideBuyProducts);
+        if (main) {
+          const toast = document.createElement("div");
 
-		// Ẩn modal đi khi click chuột ở vùng phía ngoài
-		modal.addEventListener('click', hideBuyProducts);
+          // Auto remove toast
+          const autoRemoveId = setTimeout(function () {
+            main.removeChild(toast);
+          }, duration + delay);
 
-		// Đảm bảo chỉ ẩn modal khi click chuột bên ngoài vùng modal-container
-		modalContainer.addEventListener('click', function (event) {
-			event.stopPropagation();
-		})
+          // Remove toast when click
+          toast.onclick = function (e) {
+            if (e.target.closest(".toast__close")) {
+              main.removeChild(toast);
+              // clearTimeout - không thực hiện function autoRemoveId
+              clearTimeout(autoRemoveId);
+            }
+          };
 
-		// Toast function
-		function toast({
-			id_name = '',
-			title = '',
-			message = '',
-			type = 'info    ',
-			duration = 1000,
-			delay = 3000,
-		}) {
-			const main = document.getElementById(`${id_name}`);
+          const icons = {
+            success: "fas fa-check-circle",
+          };
 
-			if (main) {
-				const toast = document.createElement('div');
+          const icon = icons[type];
+          const timeDelay = (delay / 1000).toFixed(2);
+          const timeDuration = (duration / 1000).toFixed(2);
+          toast.classList.add("toast", `toast--${type}`);
 
-				// Auto remove toast
-				const autoRemoveId = setTimeout(function () {
-					main.removeChild(toast);
-				}, duration + delay);
+          /* forwards - stop at the end. */
+          toast.style.animation = `slideInLeft ease .5s, fadeOut linear ${timeDuration}s ${timeDelay}s forwards`;
 
-				// Remove toast when click
-				toast.onclick = function (e) {
-					if (e.target.closest('.toast__close')) {
-						main.removeChild(toast);
-						// clearTimeout - không thực hiện function autoRemoveId
-						clearTimeout(autoRemoveId);
-					}
-				}
-
-				const icons = {
-					success: 'fas fa-check-circle'
-				};
-
-				const icon = icons[type];
-				const timeDelay = (delay / 1000).toFixed(2);
-				const timeDuration = (duration / 1000).toFixed(2);
-				toast.classList.add('toast', `toast--${type}`);
-
-				/* forwards - stop at the end. */
-				toast.style.animation = `slideInLeft ease .5s, fadeOut linear ${timeDuration}s ${timeDelay}s forwards`;
-
-				toast.innerHTML = `
+          toast.innerHTML = `
                     <div class="toast__icon">
                         <i class="${icon}"></i>
                     </div>
@@ -589,32 +727,31 @@
                     </div>
                 `;
 
-				main.appendChild(toast);
-			}
-		}
+          main.appendChild(toast);
+        }
+      }
 
-		function showSuccessToast() {
-			toast({
-				id_name: 'message',
-				title: 'Đặt hàng thành công!',
-				message: 'Đơn hàng của quý khách sẽ nhanh chóng được giao đến.',
-				type: 'success',
-				duration: 1000,
-				delay: 3000
-			})
-		}
+      function showSuccessToast() {
+        toast({
+          id_name: "message",
+          title: "Đặt hàng thành công!",
+          message: "Đơn hàng của quý khách sẽ nhanh chóng được giao đến.",
+          type: "success",
+          duration: 1000,
+          delay: 3000,
+        });
+      }
 
-		function showSuccessToastRegistry() {
-			toast({
-				id_name: 'messageRegistry',
-				title: 'Đăng ký thành công!',
-				message: 'Chúng tôi sẽ sớm liên hệ đến bạn. Hãy giữ liên lạc nhé!',
-				type: 'success',
-				duration: 1000,
-				delay: 3000
-			})
-		}
-	</script>
-</body>
-
+      function showSuccessToastRegistry() {
+        toast({
+          id_name: "messageRegistry",
+          title: "Đăng ký thành công!",
+          message: "Chúng tôi sẽ sớm liên hệ đến bạn. Hãy giữ liên lạc nhé!",
+          type: "success",
+          duration: 1000,
+          delay: 3000,
+        });
+      }
+    </script>
+  </body>
 </html>
