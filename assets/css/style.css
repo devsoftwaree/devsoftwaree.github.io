@@ -72,15 +72,9 @@ html {
     margin: 50px 0;
 }
 
+
 /*
 COMMON CSS
-*/
-/* .section-heading {
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 36px;
-    margin: 50px 0;
-} */
 
 /*
 Section 1: Navbar & banner
@@ -608,9 +602,6 @@ Section 1: Navbar & banner
 
 
 /* Section 4: Products */
-#products {
-    /* padding-top: 50px; */
-}
 #products .products-list {
     margin: 0 30px;
     margin-left: 5%;
