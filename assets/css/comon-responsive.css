@@ -1,0 +1,9 @@
+@media (max-width: 37.5em) {
+    #products {
+        flex-direction: column;
+    }
+
+    #products .products-card {
+        margin-top: 32px;
+    }
+}
