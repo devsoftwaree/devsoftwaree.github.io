@@ -1,0 +1,34 @@
+@media (max-width: 1028px) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-info .contact-container1 {
+        align-self: center;
+        margin-top: 24px;
+    }
+
+    .contact-info .contact-container1 a {
+        font-size: 15px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+    .contact-container img {
+        max-width: fit-content;
+        align-self: center;
+    }
+}
+
+@media (max-width: 430px) { 
+    .contact-container img {
+        min-width: 300px;
+        height: auto;
+    }
+
+    .contact-info .contact-container1 .contact-container1__left i,
+    .contact-info .contact-container1 .contact-container1__left p {
+        font-size: 12px;
+    }
+}

@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/css/stytle.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
-    <link rel="stylesheet" href="./assets/css/comon-responsive.css">
+    <link rel="stylesheet" href="./assets/css/contact-style.css">
+    <link rel="stylesheet" href="./assets/css/contact-resposive.css">
     <link rel="stylesheet" href="./assets/js/style.js">
     <title>Nến Mộc</title>
 </head>
@@ -43,61 +44,75 @@
 
     <!-- Navbar -->
     <nav id="navbar">
-        <a class="first" href="index.html">Trang chủ</a>
+        <a href="index.html">Trang chủ</a>
         <div class="middle-group">
             <a href="nen-yen.html">Nến thơm Yên</a>
             <a href="nen-nhien.html">Nến thơm Nhiên</a>
-            <a class="mark-current-page" href="#">Nến thơm Chạm</a>
+            <a href="nen-cham.html">Nến thơm Chạm</a>
         </div>
         <a class="last" href="Blogmoc.html">Blog</a>
     </nav>
 
-    <!-- Leaderboard -->
-    <section id="leaderboard">
-        <object class="leaderboard__content" data="./assets/image/Leaderboard.svg" type="image/svg+xml" width="100%"
-            height="auto"></object>
-    </section>
+    <!-- Section: Form -->
+    <section id="contact">
+         <!-- Mesage -->
+    <div id="message"></div>
 
-    <!-- Products -->
-    <section id="products">
-        <div class="products-card">
-            <div class="products-card__image">
-                <img src="./assets/image/BST_Cham/Hỷ.png" alt="Hỷ">
+    <div class="contact-info">
+        <div class="contact-info__email contact-container1">
+            <div class="contact-container1__left">
+                <i class="ti-email"></i>
+                <p>Địa chỉ email:</p>
             </div>
-            <div class="products-card__buy">
-                <h2>Giá: 189.000đ</h2>
-                <button class="buy-btn" type="button"><i class="ti-shopping-cart"></i></button>
-            </div>
+            <div class="separator"></div>
+            <a href="mailto:info@nenthommoc.vn">info@nenthommoc.vn</a>
         </div>
-        <div class="products-card">
-            <div class="products-card__image">
-                <img src="./assets/image/BST_Cham/Ngọt.png" alt="Ngọt">
+        <div class="contact-info__phone contact-container1">
+            <div class="contact-container1__left">
+                <i class="ti-mobile"></i>
+                <p>Số điện thoại:</p>
             </div>
-            <div class="products-card__buy">
-                <h2>Giá: 199.000đ</h2>
-                <button class="buy-btn" type="button"><i class="ti-shopping-cart"></i></button>
-            </div>
+            <div class="separator"></div>
+            <a href="tel:+840123456789">0123 456 789</a>
         </div>
-        <div class="products-card">
-            <div class="products-card__image">
-                <img src="./assets/image/BST_Cham/Yêu-Thương.png" alt="Yêu Thương">
-            </div>
-            <div class="products-card__buy">
-                <h2>Giá: 189.000đ</h2>
-                <button class="buy-btn" type="button"><i class="ti-shopping-cart"></i></button>
-            </div>
+    </div>
+    <div class="contact-container">
+        <img src="./assets/image/LOGO 2.svg" alt="Contact me!">
+        <div id="contact-form">
+            <form id="form">
+                <input id="user_name" class="get-info" name="username" type="text"
+                    placeholder="Nhập họ và tên của bạn"></input>
+                <input id="user_phone" class="get-info" name="userphone" type="tel"
+                placeholder="Nhập số điện thoại của bạn"></input>
+                <input id="user_email" class="get-info" name="useremail" type="email"
+                    placeholder="Nhập email của bạn"></input>
+                <textarea id="user_address" class="get-info textarea-field" name="user-address" type="text"
+                    placeholder="Nhập địa chỉ của bạn"></textarea>
+                <select name="select-product" id="user_select" class="get-info select-tab">
+                    <option value="" disabled selected hidden>Chọn loại sản phẩm</option>
+                    <option value="bst_yen">BST Yên - Nến thơm An Yên, Nhàn, Thiền</option>
+                    <option value="bst_nhien">BST Nhiên - Nến thơm Cam Thảo, Cà Phê, Quế Hồi</option>
+                    <option value="bst-cham">BST Chạm - Nến thơm Hỷ, Ngọt, Yêu Thương</option>
+                </select>
+                <input id="product_quatity" class="get-info" name="product-quatity" type="number"
+                    placeholder="Nhập số lượng"></input>
+            </form>
+            <input id="send-message-button" class="submit-button" type="submit" onclick="checkInfoRegist()"
+                value="Đặt mua">
         </div>
+    </div>
     </section>
+    
     <!-- Footer -->
     <div id="footer">
         <div class="footer__left">
-            <h3 class="text-uppercase">Giới thiệu chung về cửa hàng</h3>
+            <h3 class="text-uppercase yeseva-one">Giới thiệu chung về cửa hàng</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur ab in, animi id ea omnis suscipit
                 voluptas, nemo odio impedit similique ex repellendus, fugit recusandae. Similique accusantium modi
                 laboriosam a.</p>
         </div>
         <div class="footer__socials">
-            <h3 class="text-uppercase">Thông tin liên hệ</h3>
+            <h3 class="text-uppercase yeseva-one">Thông tin liên hệ</h3>
             <div class="contact-info">
                 <p>Địa chỉ: P. Linh Trung, Tp. Thủ Đức, Tp. Hồ Chí Minh</p>
                 <p>Số điện thoại: <a href="tel:+84 0123456789">0123 456 789</a></p>
@@ -114,6 +129,8 @@
     <div id="copyright">
         <p class="text-center"><span style="color: red">&#169</span> Bản quyền thuộc Cửa hàng Nến Mộc</p>
     </div>
+
+    <script src="./assets/js/contact-style.js"></script>
 </body>
 
 </html>
