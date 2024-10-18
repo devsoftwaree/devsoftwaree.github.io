@@ -8,6 +8,10 @@ body {
     
 }
 
+:root {
+    --sub-font: "Montserrat", sans-serif;
+}
+
 #contact {
     margin-bottom: 40px;
 }
@@ -85,7 +89,7 @@ body {
     background-color: #f5f5f5;
     width: 40%;
     border-radius: 10px;
-    min-width: 320px;
+    min-width: 85%;
 }
 
 #form {
@@ -103,15 +107,21 @@ body {
     width: 90%;
 }
 
+#form .get-info::placeholder,
+#form .textarea-field::placeholder {
+    color: #8e724b;
+}
+
 #form .textarea-field {
     padding: 16px 8px 24px 8px;
-    font-family: 'Roboto', Times, serif;
+    font-family: var(--sub-font);
 }
 
 #form .select-tab {
     width: 93%;
-    padding: 12px 0px;
-    font-family: 'Roboto', Times, serif;
+    padding: 12px 8px;
+    font-family: var(--sub-font);
+    color: #8e724b;
 }
 
 #form .get-info:focus, 
@@ -140,116 +150,4 @@ body {
     border: 2px solid #8e724b;
     color: #8e724b;
     cursor: pointer;
-}
-
-/* Toast message */
-#message{
-    position: fixed;
-    z-index: 5;
-    top: 5%;
-    bottom: 90%;
-    right: 5%;
-    left: calc(100% - 450px);
-}
-
-.toast { 
-    display: flex;
-    align-items: center;
-    background-color: #f4f4f5;
-    max-width: 480px;
-    padding: 16px 24px;
-    border-radius: 5px;
-    border-left: 4px solid;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
-    line-height: 1.5;   
-    transition: all linear .4s;
-}
-
-@keyframes slideInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(calc(100% + 20px));
-    }
-    to {
-        opacity: 1;
-        transform: translateX(default);
-    }
-}
-
-@keyframes fadeOut {
-    to {
-        opacity: 0;
-    }
-}
-
-.toast--success {
-    border-color:  #66b72c;
-}
-
-.toast--success .toast__icon {
-    color: #66b72c;
-}
-
-.toast--warning {
-    border-color: #e3a41c;
-}
-
-.toast--warning .toast__icon {
-    color: #e3a41c;
-}
-
-.toast--error {
-    border-color: #ff5836;
-}
-
-.toast--error .toast__icon {
-    color: #ff5836;
-}
-
-.toast + .toast {
-    margin-top: 24px;
-}
-
-.toast__icon,
-.toast__close {
-    padding: 0 16px;
-}
-
-.toast__icon {
-    font-size: 32px;
-}
-
-.toast__body {
-    flex-grow: 1;
-}
-
-.toast__title {
-    font-size: 16px;
-    font-weight: 600;
-    color: #333;
-}
-
-.toast__mgs {
-    font-size: 14px;
-    color: #888;
-    margin-top: 4px;
-    line-height: 1.5;
-}
-
-.toast__close {
-    opacity: 0.4;
-    font-size: 28px;
-}
-
-
-.toast__close:hover {
-    opacity: 0.2;
-    cursor: pointer;
-}
-
-#toast {
-    position: fixed;
-    top: 32px;
-    right: 32px;
-    z-index: 9;
 }

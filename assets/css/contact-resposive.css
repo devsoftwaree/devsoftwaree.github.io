@@ -1,3 +1,9 @@
+@media (min-width: 1028px) {
+    #contact-form {
+        min-width: auto;
+    }
+}
+
 @media (max-width: 1028px) {
     .contact-info {
         flex-direction: column;

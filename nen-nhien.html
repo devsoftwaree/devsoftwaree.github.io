@@ -12,11 +12,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="./assets/css/stytle.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/comon-responsive.css">
-    <script src="./assets/js/style.js"></script>
+    <script src="./assets/js/common.js"></script>
     <title>Nến Mộc</title>
 </head>
 
@@ -60,7 +61,7 @@
 
     <!-- Products -->
     <section id="products">
-        <div class="products-card">
+        <div id="cam-thao" class="products-card">
             <div class="products-card__image">
                 <img src="./assets/image/BST_Nhien/Cam-Thảo.png" alt="Cam Thảo">
             </div>
@@ -69,7 +70,7 @@
                 <button class="buy-btn" type="button"><i class="ti-shopping-cart"></i></button>
             </div>
         </div>
-        <div class="products-card">
+        <div id="ca-phe" class="products-card">
             <div class="products-card__image">
                 <img src="./assets/image/BST_Nhien/Cà-Phê.png" alt="Cà Phê">
             </div>
@@ -78,7 +79,7 @@
                 <button class="buy-btn" type="button"><i class="ti-shopping-cart"></i></button>
             </div>
         </div>
-        <div class="products-card">
+        <div id="que-hoi" class="products-card">
             <div class="products-card__image">
                 <img src="./assets/image/BST_Nhien/Quế-Hồi.png" alt="Quế Hồi">
             </div>
@@ -88,6 +89,61 @@
             </div>
         </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal js-modal">
+        <div id="message"></div>
+        <div class="modal-container js-modal-container">
+            <div class="close-button js-close-button">
+                <i class="close-icon ti-close"></i>
+            </div>
+            
+            <!-- Modal Heading -->
+            <div class="modal-heading">
+                <i class="ti-bag"></i>
+                Mua sản phẩm
+            </div>
+            <!-- Modal body -->
+            <div id="product-infomation" class="modal-body show-info">
+
+            </div>
+
+            <form id="modal-form" class="modal-body" onsubmit="return checkBeforeBuy(event)">
+                <!-- Input Quatity -->
+                <label for="modal-ip-quatity" class="modal-label">
+                    <i class="shoping-icon ti-shopping-cart"></i>
+                    Số lượng sản phẩm
+                </label>
+                <input type="number" class="modal-input" placeholder="Nhập số lượng..." id="modal-ip-quatity">
+                
+                <!-- Input name -->
+                <label for="modal-ip-username" class="modal-label">
+                    <i class="user-icon ti-user"></i>
+                    Tên khách hàng
+                </label>
+                <input type="text" class="modal-input" placeholder="Nhập họ và tên..." id="modal-ip-username">
+
+                <!-- Input phone -->
+                <label for="modal-ip-userphone" class="modal-label">
+                    <i class="user-icon ti-mobile"></i>
+                    Số điện thoại
+                </label>
+                <input type="tel" class="modal-input" placeholder="Nhập số điện thoại..." id="modal-ip-userphone">
+                
+                <!-- Input address -->
+                <label for="modal-ip-address" class="modal-label">
+                    <i class="user-icon ti-location-pin"></i>
+                    Địa chỉ
+                </label>
+                <input type="text" class="modal-input" placeholder="Nhập địa chỉ..." id="modal-ip-address">
+                
+                <!-- Button corfirm -->
+                <input type="submit" id="corfirm" value="ĐẶT HÀNG" onclick="checkBeforeBuy(event)">
+                </input>
+            </form>
+        </div>
+    </div>
+
     <!-- Footer -->
     <div id="footer">
         <div class="footer__left">

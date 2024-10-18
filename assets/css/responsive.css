@@ -1,8 +1,26 @@
+@media (max-width: 70.3125em) {
+    .middle-group {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-basis: 100%; 
+        order: 3; 
+        margin: 16px 0;
+    }
+    .first {
+        order: 1;
+    }
+    .last {
+        order: 2;
+    }
+}
+
 @media (max-width: 68em) {
     #navbar {
         max-width: 100%;
     }
 }
+
 
 @media (max-width: 56.25em) {
     #header .header__main {
@@ -19,22 +37,7 @@
     }
 }
 
-@media (max-width: 55em) {
-    .middle-group {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-basis: 100%; 
-        order: 3; 
-        margin: 16px 0;
-    }
-    .first {
-        order: 1;
-    }
-    .last {
-        order: 2;
-    }
-}
+
     
 @media (max-width: 43.75em) {
     #navbar {
