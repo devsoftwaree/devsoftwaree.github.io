@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/stytle.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/contact-style.css">
@@ -32,7 +33,7 @@
                 <input type="text" name="seacrh" id="search-bar" placeholder="Search...">
                 <button type="button" id="search-btn"><i class="ti-search"></i></button>
             </div>
-            <button type="button" id="order-now-btn">Đặt hàng ngay!</button>
+            <button type="button" id="order-now-btn" onclick="navigateToContact()">Đặt hàng ngay!</button>
         </div>
         <div class="header__account">
             <a href="#" class="text-center">
@@ -79,7 +80,7 @@
     <div class="contact-container">
         <img src="./assets/image/LOGO 2.svg" alt="Contact me!">
         <div id="contact-form">
-            <form id="form">
+            <form id="form" onsubmit="return checkInfoRegist()">
                 <input id="user_name" class="get-info" name="username" type="text"
                     placeholder="Nhập họ và tên của bạn"></input>
                 <input id="user_phone" class="get-info" name="userphone" type="tel"
@@ -100,7 +101,7 @@
             <input id="send-message-button" class="submit-button" type="submit" onclick="checkInfoRegist()"
                 value="Đặt mua">
         </div>
-    </div>
+    </div> 
     </section>
     
     <!-- Footer -->
@@ -130,7 +131,7 @@
         <p class="text-center"><span style="color: red">&#169</span> Bản quyền thuộc Cửa hàng Nến Mộc</p>
     </div>
 
-    <script src="./assets/js/contact-style.js"></script>
+    <script src="./assets/js/contact.js"></script>
 </body>
 
 </html>

@@ -2,7 +2,7 @@
  function toast({
     title = "",
     message = "",
-    type = "info    ",
+    type = "info",
     duration = 1000,
     delay = 3000,
 }) {
@@ -26,9 +26,10 @@
         };
 
         const icons = {
-            success: "fas fa-check-circle",
+            success: 'fas fa-check-circle',
+            info: 'fa-sharp fa-solid fa-circle-info',
             warning: 'fa-sharp fa-solid fa-circle-exclamation',
-            error: 'fa-sharp fa-solid fa-circle-xmark',
+            error: 'fa-sharp fa-solid fa-circle-xmark'
         };
 
         const icon = icons[type];
@@ -122,6 +123,8 @@ function checkInfoRegist() {
     var productQuantityElement = document.getElementById("product_quatity");
     var productQuantity = productQuantityElement.value;
 
+    var phonePattern = /^[0-9]{10}$/;
+
     if (!isEmptyForm()) {
         if (userName == "")
             showErrorToast("Vui lòng nhập tên của bạn!");
@@ -129,7 +132,7 @@ function checkInfoRegist() {
         else if (userPhone == "") 
             showErrorToast("Vui lòng nhập số điện thoại của bạn!");
 
-        else if (!userPhoneElement.validity.valid)
+        else if (!phonePattern.test(userPhone))
             showErrorToast("Vui lòng nhập đúng định dạng số điện thoại.");
 
         else if (userEmail == "")
@@ -147,8 +150,11 @@ function checkInfoRegist() {
         else if (productQuantity < 0)
             showErrorToast("Vui lòng nhập đúng số lượng sản phẩm bạn muốn mua.");
 
-        else
+        else {
             showSuccessToast("Đặt hàng thành công!", "Cảm ơn bạn đã tin tưởng và sử dụng sản phẩm của chúng tôi!");
+            return true;
+        }
     } else 
         showWarningToast("Vui lòng nhập thông tin bạn nhé!");
-}
+    return false;
+}   
