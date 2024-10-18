@@ -212,7 +212,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function checkBeforeBuy(event) {
     event.preventDefault();
-    // Lấy giá trị của ô số lượng
+    const modal = document.querySelector(".js-modal");
+    // Lấy giá trị của các element
     var productQuantityElement = document.getElementById("modal-ip-quatity");
     var productQuantity = productQuantityElement.value;
 
@@ -245,6 +246,7 @@ function checkBeforeBuy(event) {
 
         else {
             showSuccessToast("Đặt hàng thành công!", "Cảm ơn bạn đã tin tưởng và sử dụng sản phẩm của chúng tôi!");
+            modal.classList.remove("open");
             return true;
         }
     } else 

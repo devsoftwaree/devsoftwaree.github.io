@@ -86,4 +86,8 @@
     #leaderboard {
         display: none;
     }
+
+    #message {
+        left: calc(100% - 350px);
+    }
 }
